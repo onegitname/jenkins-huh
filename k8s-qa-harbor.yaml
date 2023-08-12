@@ -18,7 +18,7 @@ spec:
         imagePullPolicy: IfNotPresent
         name: jenkins-demo
         env:
-        - name: branch
+        - name: master
           value: <BRANCH_NAME>
 ---
 apiVersion: v1
