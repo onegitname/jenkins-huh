@@ -17,6 +17,8 @@ spec:
       - image: 192.168.5.133/jenkins-demo/jenkins-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
         name: jenkins-demo
+        args:
+          - --kubelet-insecure-tls
         env:
         - name: master
           value: <BRANCH_NAME>
